@@ -3,7 +3,6 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
 
   const form = e.target;
   const formData = new FormData(form);
-
   fetch("https://cv-devs-temp-challenge.vercel.app/api/challenge", {
     method: "POST",
     body: formData,
